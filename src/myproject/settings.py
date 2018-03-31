@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@nn(dk$m)5vrz4f=$*53p8eaqfi9&h+*=hlvq)9i7#af0xs0--'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -118,3 +118,20 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+
+EMAIL_HOST_USER = 'srivastavadi12@gmail.com'
+
+EMAIL_HOST_PASSWORD = '######'
+
+EMAIL_PORT = 587
+
+EMAIL_USE_TLS = True
+
+
+
+ADMINS = [('Divyanshu', 'srivastavadi12@gmail.com')]
+
+
