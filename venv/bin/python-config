@@ -1,4 +1,4 @@
-#!/home/newts/Development/django_boilerplate/venv/bin/python
+#!/home/divyanshu/Development/django_standard_boilerplate/venv/bin/python
 
 import sys
 import getopt

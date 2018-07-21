@@ -18,5 +18,8 @@ from django.contrib import admin
 from myapp import views
 
 urlpatterns = [
-    url(r'^', views.index)
+    url(r'^$', views.index),
+    url(r'^divyanshu/',views.myfunction),
+    url(r'^divyanshu/king',views.junk),
+    url(r'^hulk/',views.myjsonfunction)
 ]

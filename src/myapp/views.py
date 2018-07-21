@@ -11,7 +11,5 @@ from django.core.mail import send_mail
 logger = logging.getLogger('__name__')
 
 def index(request):
-    print(MAILER_LIST)
-    print(lehsun)
-    send_mail('Testing','Khilauna Mati ka',DEFAULT_FROM_EMAIL, MAILER_LIST, fail_silently = False)
-    return HttpResponse({'Hello World'},status=200)
+    return HttpResponse({'Hello world'},status = 200)
+
