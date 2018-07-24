@@ -10,6 +10,7 @@ from django.core.mail import send_mail
 
 logger = logging.getLogger('__name__')
 
+@csrf_exempt
 def index(request):
     return HttpResponse({'Hello world'},status = 200)
 

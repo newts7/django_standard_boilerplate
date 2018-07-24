@@ -16,10 +16,10 @@ Including another URLconf
 from django.conf.urls import url , include
 from django.contrib import admin
 from myapp import views
+from graphene_django.views import GraphQLView
+from django.views.decorators.csrf import csrf_exempt
 
 urlpatterns = [
     url(r'^$', views.index),
-    url(r'^divyanshu/',views.myfunction),
-    url(r'^divyanshu/king',views.junk),
-    url(r'^hulk/',views.myjsonfunction)
+    url(r'^graphql', csrf_exempt(GraphQLView.as_view(graphiql=True))),
 ]
